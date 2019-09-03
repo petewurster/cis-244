@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/ico" href="./images/hat2.png">
+	<script src="./$()-.js"></script>
+	<script src="./museum.js"></script>
+	<title>item details</title>
+</head>
+
+
+<body>
+	<h1>{{ item.getProduct() }}</h1>
+	<p>stock# {{ item.getProdID() }}</p>
+	<p>price: {{ item.getPrice() }}</p>
+	
+	<form>
+		<input type="hidden" name="qty{{ item.prodID }}" value="1">
+		<button type="submit" name="select" value="showlist">back to list</button>
+		<button type="submit" name="select" value="update">add to cart!</button>
+	</form>
+
+
+</body>

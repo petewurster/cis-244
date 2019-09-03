@@ -1,0 +1,13 @@
+<form method="POST" id="mainarea">
+	<h1>Book Exchange</h1>
+		<label>username <input type="text" name="username" placeholder="use an email address" value="{{ post.username }}"></label><br>
+		<label>password <input type="password" name="password" value="{{ post.password }}"></label><br>
+	{% if post.login %}
+		<label>Welcome, NEW USER!!!<br>password <input type="password" name="confirm" id="confirm"><br></label>
+	{% endif %}	
+		<button name="login" value="Login!" class="log">Login!</button>
+</form>
+
+
+</body>
+</html>

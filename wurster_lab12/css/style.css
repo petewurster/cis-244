@@ -1,0 +1,37 @@
+body{
+	background-color: #cdcdcd;
+	font-family: sans-serif;
+}
+
+
+li{
+	list-style-type: none;
+}
+
+table{
+	border:solid 3px #000000;
+	background-color: #99d9ea;
+
+	border-collapse: collapse;
+	text-align:center;
+}
+
+tr{
+	height:35px;
+}
+tr:nth-child(even){
+	background-color:#77aaff
+}
+
+#total{
+	background-color: #ffffff;
+	color: #000000;
+}
+.num{
+	margin-left: 10px;
+	width:40px;
+}
+
+button{
+
+}

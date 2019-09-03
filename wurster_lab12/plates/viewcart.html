@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="icon" type="image/ico" href="./images/hat2.png">
+	<script src="./$()-.js"></script>
+	<script src="./museum.js"></script>
+	<title>view cart</title>
+</head>
+
+
+<body>
+<h1>Your Cart</h1>
+<form id="cart">
+	<table>
+		{% for item in cart.contents %}
+		<tr>
+			<td><input class="num" type="number" name="qty{{ item.prodID }}"></td>
+			<td>{{ cart.qtys[loop.index-1] }} x </td>
+			<td><button type="submit" name="select" value="{{ item.prodID }}">{{ item.product }}</button></td>
+			<td>@ {{ item.getPrice() }}</td>
+		</tr>
+		{% endfor %}
+		<tr>
+			<td><button type="submit" name="select" value="update">update</button></td>
+			<td colspan=2></td>
+			<td><button type="submit" name="select" value="dump">dump cart</button></td>
+
+		</tr>
+		<tr id="total">
+			<td></td>
+			<td>{{ cart.totalItems() }} items</td>
+			<td></td>
+			<td>${{ cart.totalPrice() }}</td>
+		</tr>
+	</table>
+
+</form>
+	
+<form>
+	<button type="submit" name="select" value="showlist">back to list</button>
+</form>
+	
+
+
+
+</body>

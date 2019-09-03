@@ -1,0 +1,30 @@
+<div id="mainarea">
+	<h1>{{ user.getUsername() }}</h1>
+
+<div id="admin">
+
+{% if not post.process %}
+<form method="POST">
+	<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+	<button class="log" id="process" name="process" value="process">Process trades!</button>
+</form>
+{% else %}
+
+	{% if tables %}
+		<h3>Tables created; check<br>DB and contact users</h3>
+	{% else %}
+		<h3>Sorry no matches today!</h3>
+	{% endif %}
+
+	{% for key in tables|keys %}
+		<p>{{ key }} </p>
+	{% endfor %}
+
+{% endif %}
+
+<form method="POST">
+	<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+	<button class="log" id="demo" name="demo" value="demo">dump DB; run demo</button>
+</form>
+
+</div>

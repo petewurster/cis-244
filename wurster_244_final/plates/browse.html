@@ -1,0 +1,34 @@
+<div id="mainarea">
+	<h1>What are you looking for {{ user.getUsername() }}?</h1>
+
+<div id="books">
+	<table>
+		<tr>
+			<th>Title</th>
+			<th>&nbsp;</th>
+			<th>Cond</th>
+			<th>&nbsp;</th>
+			<th>ISBN</th>
+			<th>&nbsp;</th>
+		</tr>
+		{% for book in books %}
+		<tr>
+			<td>{{ book.getTitle() }} </td>
+			<td>&nbsp;</td>
+			<td>{{ book.getCond() }}</td>
+			<td>&nbsp;</td>
+			<td>{{ book.getISBN() }}</td>
+			<td>
+				<form method="POST">
+					<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+					<button class="select" name="select" value="{{ book.getBid() }}">select</button>
+				</form>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	<form method="POST" action=".\home.php">
+		<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+		<button id="cancel" name="add" value="cancel">cancel</button>
+	</form>
+ </div>

@@ -1,0 +1,107 @@
+body{
+	background-color: #cdcdcd;
+	font-family: sans-serif;
+}
+
+
+#mainarea{
+	margin-right:auto;
+	margin-left:auto;
+	min-width:375px;
+	width:50%;
+	border-radius: 20px;
+	border:solid 3px #000000;
+	max-width:400px;
+	text-align: center;
+	background-color: #99d9ea;
+	position:relative;
+
+}
+
+input{
+	font-size:110%;
+	width:50%;
+	margin:10px 3px;
+}
+
+label{
+	font-weight:bold;
+	font-size:100%;
+	position:relative;
+}
+
+.log{
+	width:75%;
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #b5e61d;
+	padding:10px;
+	font-size:110%;
+	margin-bottom:30px;
+}
+
+#out{
+	width:20%;
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #efe4b0;
+	padding:10px;
+	position:relative;
+	left:140px;
+}
+#add{
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #b5e61d;
+}
+
+#cancel{
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #ffc90e;
+}
+
+#books{
+	text-align:left;
+	width:40%;
+}
+
+#admin{
+	text-align:center;
+}
+
+.mybooks{
+	background-color:#efe4b0;
+}
+
+table{
+	border-collapse: collapse;
+	width:200%;
+}
+#newtitle{
+	width:120px;
+}
+
+#newisbn{
+	width:100px;
+}
+
+#browse{
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #b5e61d;
+
+}
+
+.select{
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #b5e61d;
+
+}
+.drop{
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #ffc90e;	
+}
+

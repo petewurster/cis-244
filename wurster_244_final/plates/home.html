@@ -1,0 +1,49 @@
+<div id="mainarea">
+	<h1>{{ user.getUsername() }}'s book trades</h1>
+
+<div id="books">
+	<table>
+		<tr>
+			<th>have</th>
+			<th>want</th>
+			<th></th>
+		</tr>
+		{% for book in books %}
+		<tr>
+			<td class="mybooks">{{ book.getTitle() }} </td>
+			<td>{{ book.getWantString() }}</td>
+			<td>
+				<form method="POST">
+					<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+					<button class="drop" name="drop" value="{{ book.getBid() }}">drop</button>
+				</form>
+			</td>
+		</tr>
+		{% endfor %}
+	</table>
+	{% if not post.add %}
+	<table>	
+		<tr>
+			<td><form method="POST"><button id="add" name="add" value="add">add books</button></form></td>
+		</tr>
+	</table>
+	{% else %}
+	<form method="POST">
+		<table><tr>
+			<td><input id="newtitle" name="new[]" placeholder="title"></td>
+			<td><select id="newcond" name="new[]">
+				<option value="FAIR">FAIR</option>
+				<option value="GOOD">GOOD</option>
+				<option value="POOR">POOR</option>
+			</select></td>
+			<td><input id="newisbn" name="new[]" placeholder="ISBN"></td>
+			<td><button id="browse" name="browse" value="browse">Find Swaps</button></td>
+		</tr></table>
+		<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+	</form>
+	<form method="POST">
+		<input type="hidden" name="xCSRF" value="{{ session.xCSRF }}">
+		<button id="cancel" name="add" value="cancel">cancel</button>
+	</form>
+	{% endif %}
+</div>
