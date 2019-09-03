@@ -1,0 +1,39 @@
+body{
+	background-color: #cdcdcd;
+	font-family: sans-serif;
+}
+
+
+form{
+	margin-right:auto;
+	margin-left:auto;
+	min-width:200px;
+	width:40%;
+	border-radius: 20px;
+	border:solid 3px #000000;
+	max-width:400px;
+	text-align: center;
+	background-color: #99d9ea;
+
+}
+
+input{
+	font-size:110%;
+	width:50%;
+	margin:10px 3px;
+}
+
+label{
+	font-weight:bold;
+	font-size:100%;
+	position:relative;
+}
+
+#log{
+	width:75%;
+	border-radius: 15px;
+	border:outset 1px #000000;
+	background-color: #b5e61d;
+	padding:10px;
+}
+

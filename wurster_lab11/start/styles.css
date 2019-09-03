@@ -1,0 +1,40 @@
+table, tr, td, th {
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+
+#load-info {
+    border: 1px solid gray;
+    width: 300px;
+    margin: 30px;
+    padding: 20px;
+    float: right;
+}
+
+#filters {
+    border: 1px solid gray;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.loaded {
+    padding: 10px;
+}
+
+.not-loaded {
+    color: maroon;
+}
+
+.loaded {
+    color: green;
+}
+
+.not-loaded:before {
+    content:  "\00d7  ";
+}
+
+.loaded:before {
+    content:  "\2713  ";
+}

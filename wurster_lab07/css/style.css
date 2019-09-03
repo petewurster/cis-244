@@ -1,0 +1,44 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #cccccc;
+	font-family: sans-serif;
+}
+
+
+form{
+	float:left;
+	width:195px;
+	min-width:195px;
+	margin-left:10%;
+}
+
+legend{
+	font-size: 75%;
+	font-weight:bold;
+}
+
+fieldset{
+	border:ridge 3px #000000;
+	background-color:#dddddd;
+}
+
+table{
+	border-collapse: collapse;
+	max-width:55%;
+	float:left;
+	background-color: #ffffff;
+	border:ridge 3px #000000;
+	margin-left:8%;
+}
+
+td{
+	padding:0 5px;
+}
+
+tr:nth-child(odd){
+	background-color:#dddddd;
+}
+

@@ -1,0 +1,66 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #cccccc;
+	font-family: sans-serif;
+}
+
+.admin form{
+	min-width: 130%;
+}
+form{
+	float:left;
+	min-width:95px;
+	margin-left:10%;
+}
+
+legend{
+	font-size: 75%;
+	font-weight:bold;
+}
+
+fieldset{
+	border:ridge 3px #000000;
+	background-color:#dddddd;
+}
+
+button{
+	background-color:#ffffff;}
+
+table{
+	border-collapse: collapse;
+	max-width:55%;
+	float:left;
+	background-color: #ffffff;
+	border:ridge 3px #000000;
+	margin-left:8%;
+}
+
+td{
+	padding:0 5px;
+}
+
+tr:nth-child(odd){
+	background-color:#dddddd;
+}
+
+ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+
+}
+
+li li{
+	padding-left:15px;
+}
+
+li span{
+	font-weight:bold;
+}
+
+thead{
+	text-align: center;
+}

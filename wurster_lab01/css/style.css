@@ -1,0 +1,24 @@
+body{
+	background-color: #cccccc;
+	font-family: sans-serif;
+}
+
+fieldset input{
+	direction:rtl;
+}
+
+fieldset{
+	width:25%;
+}
+
+input::placeholder{
+	text-align:right;
+}
+
+#card{
+	width:50%;
+	background-color:#ffffff;
+	border:2px solid #000000;
+	text-align: center;
+	line-height:1;
+}

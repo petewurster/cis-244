@@ -1,0 +1,29 @@
+body{
+	background-color: #bbbbbb;
+	font-family: sans-serif;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+td{
+	border:solid 1px #000000;
+	background-color:#00ff00;
+	text-align:center;
+	width:25px;
+	height:25px;
+}
+
+.axis{
+	background-color: #ffffff;
+}
+
+.even{
+	background-color: #ff0000;
+	color:#ffffff;
+}
+
+input:not(#submit){
+	width:40px;
+}
